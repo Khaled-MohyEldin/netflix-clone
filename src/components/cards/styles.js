@@ -66,7 +66,7 @@ export const Button = styled.button`
 
 export const Group = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
     min-height: 120px;
     gap: 0.6em;
 `
@@ -78,6 +78,7 @@ export const Card = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     min-width: 200px;
+    // max-width: 250px;
     min-height: 150px;
     cursor: pointer;
     position: relative;

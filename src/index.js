@@ -7,19 +7,19 @@ import { FBContext } from "./context/firebase";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc} from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBXlay3UbRD7u5s0WCWAuY7Yt8QZhErvS8",
-  authDomain: "netflix-clone-ed90f.firebaseapp.com",
-  projectId: "netflix-clone-ed90f",
-  storageBucket: "netflix-clone-ed90f.appspot.com",
-  messagingSenderId: "639673190386",
-  appId: "1:639673190386:web:d5fa20a769befd59dbcd6b"
+  apiKey: process.env.REACT_APP_FIREBASE_API_key,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
 //Initialize Firebase
